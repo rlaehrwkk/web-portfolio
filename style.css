@@ -170,7 +170,7 @@ a {
     color: #ffffff;
 }
 a:hover {
-    color: #fff; /* Change to your desired hover color */
+    color: #fff;
 }
 
 a:hover img {
@@ -298,6 +298,13 @@ h6 {
 @media (min-width: 320px) and (max-width:440px) {
     .navbar-proj {
         font-size: 12px;
+        margin: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width:796px) {
+    a {
+        font-size: 14px;
         margin: none;
     }
 }
