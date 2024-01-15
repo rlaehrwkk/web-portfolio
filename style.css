@@ -1,0 +1,378 @@
+/*---------------------------------------------------------------------------------------- FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/*---------------------------------------------------------------------------------------- CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #101630;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*---------------------------------------------------------------------------------------- NAVBAR */
+.navbar-nav {
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.cool-brand {
+    font-family: 'Fira Code', monospace;
+    font-style: bold;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV37Nv7g.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    letter-spacing: 1px;
+    padding: 15px 35px;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: aqua;
+}
+
+/*---------------------------------------------------------------------------------------- LANDING */
+#profile-img {
+    margin-left: 1.5rem;
+}
+
+.header-md-1 {
+    color: grey !important;
+    margin-left: 2.5rem;
+}
+
+.header-md-2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 2.5rem;
+}
+
+.header-md-3{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.p-md-1 {
+    margin-left: 2.5rem;
+}
+
+.glowing-border {
+    outline: 2px solid rgba(206, 217, 229, 0.7);
+    border-radius: 10px;
+}
+
+.text-box {
+    text-align: justify;
+}
+
+
+/*---------------------------------------------------------------------------------------- PROJECTS */
+.navbar-proj {
+    font-size: 24px;
+}
+
+                               /** project-card **/
+.card {
+    background-color: #171f46 !important;
+}
+
+
+.project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background: #ffffff;
+    height: 25rem;
+    width: 65rem;
+    margin: 0em 1em 1.5em 0.5em;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px aqua;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+}
+
+.project-title {
+    padding: 0 1.25rem;
+    font-weight: bold;
+}
+
+.project-text {
+    font-size: 14px;
+    margin: 0;
+    padding: 0 1.5rem;
+}
+
+.project-card:hover {
+    box-shadow: 0px 1px 10px #7b8bd4;
+    -webkit-animation-name: cards;
+    -webkit-animation-duration: 100ms;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+.p1 {
+    background: url(images/comic-station.png);
+    background-size: cover;
+}
+
+/* .p1:hover {
+    background-image: linear-gradient(rgba(143, 143, 206, 0.466), 
+    rgba(21, 11, 26, 0.849)), url(images/comic-station.png);
+} */
+
+.p2 {
+    background: url(images/ipharm.jpg);
+    background-size: cover;
+}
+
+/*----------------------------------------------------------------------------------------  TOOLS */
+.header-md-4 {
+    font-family: 'Fira Code', monospace;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV37Nv7g.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tool-img {
+    max-width: 64px;
+    max-height: 64px;
+    margin: 5px;
+}
+
+/*----------------------------------------------------------------------------------------  CONTACT SECTION */
+
+a {
+    color: #ffffff;
+}
+a:hover {
+    color: #fff; /* Change to your desired hover color */
+}
+
+a:hover img {
+    filter: brightness(80%); 
+}
+
+.p-message {
+    color: #d4d4d4;
+}
+
+.card {
+    border-top-left-radius: 8rem;
+    border-top-right-radius: 8rem;
+    background: linear-gradient(to right, rgba(74, 56, 194, 0.8), rgba(79, 150, 214, 0.8));
+}
+
+.message-card {
+    background: linear-gradient(to left, #4c3fa7, #4f96d6);
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px #415197;
+}
+
+.btn-primary {
+    background-color: #101630;
+    color: #fff;
+}
+
+input#name, input#email {
+    background-color: #101630;
+    color: #ffffff;
+}
+
+textarea#message {
+    background-color: #101630;
+    color: #ffffff;
+}
+
+hr {
+    margin-top: 3em;
+    border-color: rgb(183, 177, 177);
+}
+
+h6 {
+    margin-top: 3em;
+    color: rgb(224, 222, 222);
+    font-size: 14px;
+    font-family: 'Fira Code', monospace;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV37Nv7g.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    letter-spacing: 1px;
+}
+
+.icons {
+    max-width: 50px;
+    max-height: 45px;
+}
+/*----------------------------------------------------------------------------------------  MEDIA */
+                               /** Smaller screens **/
+@media (max-width: 767.9px) {
+    .navbar-brand {
+        font-size: 18px;
+        font-family: 'Roboto Mono', monospace !important;
+    }
+    
+    .navbar-nav {
+        padding: 5px 3px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+    }
+    
+    .cool-brand {
+        padding: 5px 5px;
+    }
+    
+    #profile-img {
+        border-radius: 50% !important;
+        max-width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+    }
+    
+    .p-md-1{
+        margin-left: auto;
+    }
+    
+    .header-sm {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .navbar-proj {
+        font-size: 18px;
+        margin: none;
+    }
+    
+    .project-title {
+        padding: 0;
+        font-size: 18px;
+    }
+    
+    .project-text {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .card-link {
+        text-align: center;
+    }
+
+    .card {
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+        background: linear-gradient(to right, rgba(74, 56, 194, 0.8), rgba(79, 150, 214, 0.8));
+    }
+}
+                               /** Specific screens **/ 
+@media (min-width: 320px) and (max-width:440px) {
+    .navbar-proj {
+        font-size: 12px;
+        margin: none;
+    }
+}
+                               /** Medium screens **/ 
+@media (min-width: 768px) and (max-width: 1139.99px) {
+    .navbar-nav {
+        text-transform: uppercase !important;
+        font-size: 18px;
+        padding: auto;
+    }
+    
+    .header-md-1 {
+        color: grey !important;
+        font-size: 24px;
+        margin-bottom: 1px;
+    }
+    
+    .header-md-2 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    #profile-img {
+        max-width: auto;
+    }
+
+    .tool-img {
+        height: 120px !important;
+        width: 120px;
+    }
+}
+
+                               /** Extra-large screens **/
+@media (min-width: 1140px) {
+    .header-md-1 {
+        color: grey !important;
+        font-size: 55px;
+        margin-bottom: -5px;
+    }
+    
+    .header-md-2 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 60px;
+    }
+
+    .nav-md-link {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/*--------------------------------------------------------------------- ANIMATIONS */
+@keyframes cards {
+    from{
+        transform: scale(1); 
+    }
+    to {
+        transform: scale(1.03);
+    }
+}
+
+@keyframes button {
+    from {
+        background: #3d107b;
+        color: white;
+    }
+    to {
+        background: white;
+        color:#3d107b;
+        box-shadow: 0px 1px 7px #a3a3a3;
+    }
+}
+
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
